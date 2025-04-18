@@ -7,7 +7,7 @@ let getHomePage = (req, res) => {
             console.log('>>> check mysql');
             console.log(results);
             data = results.map((row) => {return row});
-            return res.render("test/index.ejs", {dataUser: JSON.stringify(data)});
+            return res.render("index.ejs", {dataUser:data, test: 'abc string test'});
         }
     );
 }
