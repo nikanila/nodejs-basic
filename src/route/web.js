@@ -61,7 +61,7 @@ const initWebRoute = (app) => {
 
 
     router.get('/about', (req, res) => {
-        res.send(`I'm Eric!`)
+        res.send(`I'm Hoan!`)
     })
 
     return app.use('/', router)
